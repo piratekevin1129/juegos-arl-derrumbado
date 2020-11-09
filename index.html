@@ -49,6 +49,10 @@
             </div>
             <div id="game-scene">
                 <div id="game-wrapper">
+                    <div id="cuerda"></div>
+                    <div id="personaje_salvado" class="spd_movieclip personaje-action-off" width="95" height="200" frames="12" src="assets/images/salvando/"></div>
+                    <div id="personaje_temblando" class="spd_movieclip personaje-action-on" width="95" height="200" frames="11" src="assets/images/temblando/"></div>
+
                     <div id="estructura" class="barras-moving-0">
                         <div id="andamios-mask">
                             <div id="andamios"></div>
@@ -58,29 +62,29 @@
                         <div id="humo2" class="humo"></div>
                         <div id="humo3" class="humo"></div>
                         <div id="barras">
-                            <div id="barra1" class="barra"></div>
-                            <div id="barra2" class="barra"></div>
-                            <div id="barra3" class="barra"></div>
-                            <div id="barra4" class="barra"></div>
-                            <div id="barra5" class="barra"></div>
-                            <div id="barra6" class="barra"></div>
-                            <div id="barra7" class="barra"></div>
-                            <div id="barra8" class="barra"></div>
-                            <div id="barra9" class="barra"></div>
-                            <div id="barra10" class="barra"></div>
-                            <div id="barra11" class="barra"></div>
-                            <div id="barra12" class="barra"></div>
+                            <div id="barra12"></div>
+                            <div id="barra11"></div>
+                            <div id="barra10"></div>
+                            <div id="barra9"></div>
+                            <div id="barra8"></div>
+                            <div id="barra7"></div>
+                            <div id="barra6"></div>
+                            <div id="barra5"></div>
+                            <div id="barra4"></div>
+                            <div id="barra3"></div>
+                            <div id="barra2"></div>
+                            <div id="barra1"></div>
                         </div>
                     </div>
-                    <div id="personaje_salvado" class="spd_movieclip" width="95" height="200" frames="21" src="assets/images/salvando/"></div>
-                    <div id="personaje_temblando" class="spd_movieclip" width="95" height="200" frames="6" src="assets/images/temblando/"></div>
 
                     <div id="grua">
+                        <div id="hilo"></div>
                         <div id="grua-1"></div>
                         <div id="grua-2" class="grua-2-active"></div>
                         <div id="grua-3"></div>
-                        <div id="hilo" class="hilo-active"></div>
-                        <div id="lingote" class="lingote-active"></div>
+                        <div id="lingote" class="lingote-active">
+                            <div id="lingote_content"></div>
+                        </div>
                     </div>
 
                     <div id="letras-content"></div>
@@ -102,6 +106,8 @@
             </div>
         </div>
 
+        <button id="music-btn" class="music-on" onclick="clickAudio(this)"></button>
+
         <div id="cargador" class="cargador-on">
             <div class="cargador-img"></div>
             <div class="cargador-txt" id="cargador_txt">Cargando...</div>
@@ -120,6 +126,9 @@
 
 var boton_mp3 = null
 var ganar_mp3 = null
+var caerse_mp3 = null
+var temblor_mp3 = null
+var perder_mp3 = null
 var underground_mp3 = null
 
 var animation_start = null
@@ -129,11 +138,28 @@ window.onload = function(){
     boton_mp3 = data
     loadAudio({src:'assets/media/ganar.mp3',callBack:function(data){
     ganar_mp3 = data
+    loadAudio({src:'assets/media/caerse.mp3',callBack:function(data){
+    caerse_mp3 = data
+    loadAudio({src:'assets/media/temblor.mp3',callBack:function(data){
+    temblor_mp3 = data
+    loadAudio({src:'assets/media/perder.mp3',callBack:function(data){
+    perder_mp3 = data
         
+        spdCreateMovieClip({idname:'personaje_temblando',callBack:function(){
+        spdCreateMovieClip({idname:'personaje_salvado',callBack:function(){
+
+            spdCreateMovieClipAnimation({id:0,moviename:'personaje_temblando'})
+            spdCreateMovieClipAnimation({id:1,moviename:'personaje_salvado'})
 
             prepareWindow()
             setGame()
 
+        }})
+        }})
+
+    }})
+    }})
+    }})
     }})
     }})
 
