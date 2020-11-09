@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    
+    <!--FONT AWASOME-->
+    <script src="https://kit.fontawesome.com/a6f44a68f2.js" crossorigin="anonymous"></script>
+
+    <!--Estilos propios-->
+    <link href="assets/css/fonts.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/master.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+
+    <!--Libreria spider-->
+    <link rel="stylesheet" type="text/css" href="assets/spider/sprites/sprite.css" />
+    <link rel="stylesheet" type="text/css" href="assets/spider/sprites/fotograma.css" />
+    <title>Derrumbado</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div class="row row-header1">
+                <div class="logo-sura">
+                </div>
+                <div class="titulo">
+                    <h1><span>Módulos Interactivos:</span> Prevención de Riesgos</h1>
+                </div>
+            </div>
+            <div class="row row-header2">
+                <div class="logo-arl"></div>
+                <div id="oficio-title">
+                    <h2 id="oficio-title-txt"></h2>
+                </div>
+            </div>
+        </header>
+
+        <div id="game">
+            <div id="fondo">
+                <div class="cielo"></div>
+                <div class="nubes"></div>
+            </div>
+            <div id="game-scene">
+                <div id="game-wrapper">
+                    <div id="fondo-2"></div>
+                    <div id="estructura" class="barras-moving-0">
+                        <div id="andamios-mask">
+                            <div id="andamios"></div>
+                        </div>
+                        <div id="plataforma"></div>
+                        <div id="humo1" class="humo"></div>
+                        <div id="humo2" class="humo"></div>
+                        <div id="humo3" class="humo"></div>
+                        <div id="barras">
+                            <div id="barra1" class="barra"></div>
+                            <div id="barra2" class="barra"></div>
+                            <div id="barra3" class="barra"></div>
+                            <div id="barra4" class="barra"></div>
+                            <div id="barra5" class="barra"></div>
+                            <div id="barra6" class="barra"></div>
+                            <div id="barra7" class="barra"></div>
+                            <div id="barra8" class="barra"></div>
+                            <div id="barra9" class="barra"></div>
+                            <div id="barra10" class="barra"></div>
+                            <div id="barra11" class="barra"></div>
+                            <div id="barra12" class="barra"></div>
+                        </div>
+                    </div>
+                    <div id="personaje_salvado" class="spd_movieclip" width="95" height="200" frames="21" src="assets/images/salvando/"></div>
+                    <div id="personaje_temblando" class="spd_movieclip" width="95" height="200" frames="6" src="assets/images/temblando/"></div>
+
+                    <div id="grua">
+                        <div id="grua-1"></div>
+                        <div id="grua-2"></div>
+                        <div id="grua-3"></div>
+                        <div id="lingote"></div>
+                    </div>
+
+                    <div id="letras-content"></div>
+                    <div id="incorrectas-content"></div>
+                </div>
+            </div>
+            <div id="home-scene">
+                <div id="background"></div>
+            </div>
+        </div>
+
+        <div id="modal" class="modal-on">
+            <div id="modal-box">
+                <button id="modal-close-btn"></button>
+                <h2 id="modal-title">Instrucciones</h2>
+                <div id="modal-content">
+                </div>
+                <button id="modal-button">jugar</button>
+            </div>
+        </div>
+
+        <div id="cargador" class="cargador-on">
+            <div class="cargador-img"></div>
+            <div class="cargador-txt" id="cargador_txt">Cargando...</div>
+        </div>
+    </div>
+
+<!--Libreria spider-->
+<script src="assets/spider/sprites/sprite.js"></script>
+<script src="assets/spider/sprites/fotograma.js"></script>
+
+<script src="assets/data.js"></script>
+<script src="assets/js/mobile.js"></script>
+<script src="assets/js/modal.js"></script>
+<script src="assets/js/game.js"></script>
+<script>
+
+var boton_mp3 = null
+var ganar_mp3 = null
+var underground_mp3 = null
+
+var animation_start = null
+window.onload = function(){
+
+    loadAudio({src:'assets/media/boton.mp3',callBack:function(data){
+    loadAudio({src:'assets/media/ganar.mp3',callBack:function(data){
+    boton_mp3 = data
+        
+
+            prepareWindow()
+            setGame()
+
+    }})
+    }})
+
+}
+
+</script>
+</body>
+</html>
