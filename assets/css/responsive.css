@@ -1,0 +1,154 @@
+@media (min-width: 768px){
+	.nubes{
+		animation-name: animacion-nubes;
+	    animation-duration: 20s;
+	    animation-iteration-count: infinite;
+	    animation-timing-function: linear;
+	    -webkit-animation-name: animacion-nubes;
+	    -webkit-animation-duration: 20s;
+	    -webkit-animation-iteration-count: infinite;
+	    -webkit-animation-timing-function: linear;
+	}
+
+	#modal-button:hover,#repetir-btn:hover{
+	    cursor: pointer;
+	    transform: scale(1.1);
+	    -webkit-transform: scale(1.1);
+	    -o-transform: scale(1.1);
+	    background-color: #0097A3;
+	}
+}
+
+@media (min-width: 560px) and (max-width: 767px){
+    #container{
+        width: 100%;
+        height: 578px;
+    }
+    .logo-sura{
+        margin-left: 10px;
+    }
+    .titulo{
+        margin-right: 10px;
+    }
+    .logo-arl{
+        margin-left: 10px;
+    }
+    #oficio-title{
+        margin-right: 10px;
+    }
+
+    .nubes{
+		animation-name: animacion-nubes;
+	    animation-duration: 20s;
+	    animation-iteration-count: infinite;
+	    animation-timing-function: linear;
+	    -webkit-animation-name: animacion-nubes;
+	    -webkit-animation-duration: 20s;
+	    -webkit-animation-iteration-count: infinite;
+	    -webkit-animation-timing-function: linear;
+	}
+
+    /************MAIN**************/
+    
+    /******************************/
+
+    /************MODAL**************/
+    #modal-box{
+        width: 350px;
+        padding: 10px;
+    }
+    
+    #modal-title{
+        font-size: 18px;
+    }
+    
+    #modal-button:hover,#repetir-btn:hover{
+	    cursor: pointer;
+	    transform: scale(1.1);
+	    -webkit-transform: scale(1.1);
+	    -o-transform: scale(1.1);
+	    background-color: #0097A3;
+	}
+}
+
+@media (min-width: 280px) and (max-width: 559px){
+    #container{
+        width: 100%;
+        height: 578px;
+    }
+    .logo-sura{
+        margin-left: 10px;
+    }
+    .titulo{
+        margin-right: 10px;
+        width: 200px;
+        width: calc(100% - (73px + 30px));
+        width: -moz-calc(100% - (73px + 30px));
+    }
+    .logo-arl{
+        margin-left: 10px;
+    }
+    #oficio-title{
+        margin-right: 10px;
+    }
+
+    .fondo{
+        background-size: cover;
+        background-image: url(../images/fondo-v3.jpg);
+    }
+
+    #game-wrapper{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    .nubes{
+        animation: none;
+        animation: unset;
+        -webkit-animation: none;
+        -webkit-animation: unset;
+    }
+
+    /**************MAIN**************/
+    
+
+    /************MODAL**************/
+    #modal-box{
+        width: 95%;
+        padding: 10px;
+    }
+    
+    #modal-title{
+        font-size: 18px;
+    }
+    #modal-button{
+        cursor: default;
+    }
+    #modal-close-btn{
+        cursor: default;
+    }
+    .modal-instrucciones-gif > div{
+        cursor: default;
+    }
+    .modal-instrucciones-gif > div video{
+        cursor: default;
+    }
+    .modal-instrucciones-gif > div button{
+        cursor: default;
+    }
+
+    /********TOOLTIP*********/
+    #tooltip{
+        width: 90%;
+        top: 15%;
+    }
+    .tooltip-off{
+        right: -100%;
+    }
+    .tooltip-on{
+        right: 5%;
+    }
+}

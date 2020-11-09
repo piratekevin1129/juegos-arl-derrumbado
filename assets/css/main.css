@@ -1,21 +1,10 @@
-#fondo-2{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(../images/fondo.png);
-    top: 0px;
-    left: 0px;
-}
 
 #estructura{
     position: absolute;
     width: 440px;
     height: 215px;
-    right: 50px;
-    top: 50%;
+    right: 10px;
+    top: 38%;
     bottom: 150px;
     box-sizing: border-box;
     border: #000 solid 1px;
@@ -32,8 +21,7 @@
 #andamios{
     position: absolute;
     width: 338px;
-    height: 134px;
-    bottom: 0px;
+    height: 184px;
     left: 50%;
     left: calc(50% - (338px / 2));
     left: -moz-calc(50% - (338px / 2));
@@ -52,9 +40,9 @@
     -webkit-animation-fill-mode: forwards;
 }
 .barras-moving-0 #andamios{
-    top: 100%;
-    top: calc(100% - 134px);
-    top: -moz-calc(100% - 134px);
+    top: 90%;
+    top: calc(90% - 184px);
+    top: -moz-calc(90% - 184px);
 }
 
 .barras-moving-1 #andamios{
@@ -63,14 +51,14 @@
 }
 @keyframes animacion-andamios-1{
     0%{
-        top: 100%;
-        top: calc(100% - 134px);
-        top: -moz-calc(100% - 134px);
+        top: 90%;
+        top: calc(90% - 184px);
+        top: -moz-calc(90% - 184px);
     }
     100%{
         top: 80%;
-        top: calc(80% - 134px);
-        top: -moz-calc(80% - 134px);
+        top: calc(80% - 184px);
+        top: -moz-calc(80% - 184px);
     }
     0%{
         transform: translateX(-10px);
@@ -135,13 +123,13 @@
 @keyframes animacion-andamios-2{
     0%{
         top: 80%;
-        top: calc(80% - 134px);
-        top: -moz-calc(80% - 134px);
+        top: calc(80% - 184px);
+        top: -moz-calc(80% - 184px);
     }
     100%{
         top: 60%;
-        top: calc(60% - 134px);
-        top: -moz-calc(60% - 134px);
+        top: calc(60% - 184px);
+        top: -moz-calc(60% - 184px);
     }
     0%{
         transform: translateX(-10px);
@@ -206,13 +194,13 @@
 @keyframes animacion-andamios-4{
     0%{
         top: 60%;
-        top: calc(60% - 134px);
-        top: -moz-calc(60% - 134px);
+        top: calc(60% - 184px);
+        top: -moz-calc(60% - 184px);
     }
     100%{
         top: 40%;
-        top: calc(40% - 134px);
-        top: -moz-calc(40% - 134px);
+        top: calc(40% - 184px);
+        top: -moz-calc(40% - 184px);
     }
     0%{
         transform: translateX(-10px);
@@ -277,13 +265,13 @@
 @keyframes animacion-andamios-4{
     0%{
         top: 40%;
-        top: calc(40% - 134px);
-        top: -moz-calc(40% - 134px);
+        top: calc(40% - 184px);
+        top: -moz-calc(40% - 184px);
     }
     100%{
         top: 20%;
-        top: calc(20% - 134px);
-        top: -moz-calc(20% - 134px);
+        top: calc(20% - 184px);
+        top: -moz-calc(20% - 184px);
     }
     0%{
         transform: translateX(-10px);
@@ -348,8 +336,8 @@
 @keyframes animacion-andamios-5{
     0%{
         top: 20%;
-        top: calc(20% - 134px);
-        top: -moz-calc(20% - 134px);
+        top: calc(20% - 184px);
+        top: -moz-calc(20% - 184px);
     }
     100%{
         top: 100%;
@@ -642,7 +630,7 @@
     position: absolute;
     width: 100%;
     height: 184px;
-    top: 50px;
+    top: 38px;
     left: 0px;
     background-color: rgba(0,0,0,0.2);
 }
@@ -666,15 +654,16 @@
 #barra3{
     width: 32px;
     height: 182px;
+    top: 0px;
 }
 #barra1{
-    left: 20%;
+    left: 25%;
 }
 #barra2{
     left: 50%;
 }
 #barra3{
-    left: 80%;
+    left: 85%;
 }
 
 #barra4,
@@ -682,15 +671,16 @@
 #barra6{
     width: 25px;
     height: 145px;
+    top: 5px;
 }
 #barra4{
-    left: 15%;
+    left: 20%;
 }
 #barra5{
     left: 45%;
 }
 #barra6{
-    left: 75%;
+    left: 80%;
 }
 
 #barra7,
@@ -698,15 +688,16 @@
 #barra9{
     width: 22px;
     height: 126px;
+    top: 10px;
 }
 #barra7{
-    left: 10%;
+    left: 15%;
 }
 #barra8{
     left: 40%;
 }
 #barra9{
-    left: 70%;
+    left: 75%;
 }
 
 #barra10,
@@ -714,15 +705,16 @@
 #barra12{
     width: 19px;
     height: 109px;
+    top: 15px;
 }
 #barra10{
-    left: 5%;
+    left: 10%;
 }
 #barra11{
     left: 35%;
 }
 #barra12{
-    left: 65%;
+    left: 70%;
 }
 
 
@@ -949,13 +941,248 @@
 
 
 #grua{
-    
+    position: absolute;
+    width: 240px;
+    height: 310px;
+    top: 200px;
+    left: 20%;
+    box-sizing: border-box;
 }
-        <div id="grua-1"></div>
-        <div id="grua-2"></div>
-        <div id="grua-3"></div>
-    </div>
+#grua-1{
+    position: absolute;
+    width: 16px;
+    height: 310px;
+    top: 0px;
+    right: 30px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/grua_1.png);
+}
+#grua-2{
+    position: absolute;
+    width: 270px;
+    height: 40px;
+    top: 45px;
+    left: 0px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/grua_2.png);
+    transform-origin: 70% center;
+    -webkit-transform-origin: 70% center;
+    -o-transform-origin: 70% center;
+}
+.grua-2-active{
+    animation-name: animacion-grua-activa;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-name: animacion-grua-activa;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+}
+@keyframes animacion-grua-activa{
+    0%{
+        transform: rotate(-5deg);
+        -webkit-transform: rotate(-5deg);
+        -o-transform: rotate(-5deg);
+    }
+    50%{
+        transform: rotate(5deg);
+        -webkit-transform: rotate(5deg);
+        -o-transform: rotate(5deg);
+    }
+    100%{
+        transform: rotate(-5deg);
+        -webkit-transform: rotate(-5deg);
+        -o-transform: rotate(-5deg);
+    }
+}
+#grua-3{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 46px;
+    left: 75%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/grua_3.png);
+}
 
-    <div id="letras-content"></div>
-    <div id="incorrectas-content"></div>
-</div>
+#hilo{
+    position: absolute;
+    width: 6px;
+    height: 100px;
+    left: 11%;
+    background: #77707C;
+    background: linear-gradient(to right, #201513, #77707C, #201513);
+    background: -moz-linear-gradient(to right, #201513, #77707C, #201513);
+    background: -webkit-linear-gradient(to right, #201513, #77707C, #201513);
+    background: -o-linear-gradient(to right, #201513, #77707C, #201513);
+}
+.hilo-active{
+    animation-name: animacion-hilo-activo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-name: animacion-hilo-activo;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+}
+@keyframes animacion-hilo-activo{
+    0%{
+        top: 40px;
+    }
+    50%{
+        top: 50px;
+    }
+    100%{
+        top: 50px;
+    }
+}
+#lingote{
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    left: 5%;
+
+    transform: translateX(-45%);
+    -webkit-transform: translateX(-45%);
+    -o-transform: translateX(-45%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../images/lingote.png);
+}
+.lingote-active{
+    animation-name: animacion-lingote-activo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-name: animacion-lingote-activo;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+}
+@keyframes animacion-lingote-activo{
+    0%{
+        top: 150px;
+    }
+    50%{
+        top: 100px;
+    }
+    100%{
+        top: 150px;
+    }
+}
+
+#letras-content{
+    position: absolute;
+    width: 400px;
+    width: calc(50px * 6);
+    width: -moz-calc(50px * 6);
+    height: 130px;
+    bottom: 110px;
+    left: 2%;
+    background-color: rgba(0,0,0,0.2);
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.letra-col{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 26px;
+    margin: 0px;
+    padding: 0px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.ladrillo{
+    position: relative;
+    width: 50px;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 1px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-image: url(../images/ladrillo.png);
+
+    transition: transform 0.2s, -webkit-transform 0.2s, -o-transform 0.2s;
+    -webkit-transition: transform 0.2s, -webkit-transform 0.2s, -o-transform 0.2s;
+}
+.ladrillo:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    box-shadow: 0px 4px 2px 1px rgba(0,0,0,0.4);
+}
+.ladrillo p{
+    display: block;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'FSJoey-Bold';
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: normal;
+    line-height: normal;
+    text-shadow: 0px 0px 3px rgba(0,0,0,0.4);
+}
+#incorrectas-content{
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    background: #FFFFFF;
+    background: linear-gradient(to bottom, #FFFFFF, #CCCCCC);
+    background: -webkit-linear-gradient(to bottom, #FFFFFF, #CCCCCC);
+    background: -o-linear-gradient(to bottom, #FFFFFF, #CCCCCC);
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.8);
+    bottom: 15px;
+    right: 15px;
+}
+.incorrecta-txt{
+    display: flex;
+    width: 30px;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+
+    font-family: 'FSJoey-Bold';
+    font-size: 20px;
+    color: #444444;
+    text-align: center;
+    line-height: normal;
+    font-weight: normal;
+}

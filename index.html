@@ -45,10 +45,10 @@
             <div id="fondo">
                 <div class="cielo"></div>
                 <div class="nubes"></div>
+                <div id="background"></div>
             </div>
             <div id="game-scene">
                 <div id="game-wrapper">
-                    <div id="fondo-2"></div>
                     <div id="estructura" class="barras-moving-0">
                         <div id="andamios-mask">
                             <div id="andamios"></div>
@@ -77,9 +77,10 @@
 
                     <div id="grua">
                         <div id="grua-1"></div>
-                        <div id="grua-2"></div>
+                        <div id="grua-2" class="grua-2-active"></div>
                         <div id="grua-3"></div>
-                        <div id="lingote"></div>
+                        <div id="hilo" class="hilo-active"></div>
+                        <div id="lingote" class="lingote-active"></div>
                     </div>
 
                     <div id="letras-content"></div>
@@ -87,7 +88,7 @@
                 </div>
             </div>
             <div id="home-scene">
-                <div id="background"></div>
+                
             </div>
         </div>
 
@@ -125,8 +126,9 @@ var animation_start = null
 window.onload = function(){
 
     loadAudio({src:'assets/media/boton.mp3',callBack:function(data){
-    loadAudio({src:'assets/media/ganar.mp3',callBack:function(data){
     boton_mp3 = data
+    loadAudio({src:'assets/media/ganar.mp3',callBack:function(data){
+    ganar_mp3 = data
         
 
             prepareWindow()
