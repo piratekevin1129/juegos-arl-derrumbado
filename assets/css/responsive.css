@@ -49,7 +49,31 @@
 	}
 
     /************MAIN**************/
-    
+    #estructura{
+        right: 0px;
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+        -o-transform: scale(0.8);
+        transform-origin: 100% 0px;
+        -webkit-transform-origin: 100% 0px;
+        -o-transform-origin: 100% 0px;
+    }
+    #personaje_temblando{
+        right: 40px;
+    }
+    #personaje_salvado{
+        right: 44px;
+    }
+    #cuerda{
+        right: 90px;
+    }
+    #grua{
+        top: -10px;
+        left: 25%;
+    }
+    #letras-content{
+        bottom: 15px;
+    }
     /******************************/
 
     /************MODAL**************/
@@ -113,8 +137,132 @@
     }
 
     /**************MAIN**************/
-    
+    #incorrectas-content{
+        width: 100px;
+        height: 35px;
+        bottom: initial;
+        right: initial;
+        left: 10px;
+        top: 10px;
+    }
+    .incorrecta-txt{
+        width: 20px;
+    }
+    #estructura{
+        right: initial;
+        bottom: initial;
+        left: 50%;
+        left: calc(50% - 220px);
+        left: -moz-calc(50% - 220px);
+        
+        top: 47%;
+        transform: scale(0.7);
+        -webkit-transform: scale(0.7);
+        -o-transform: scale(0.7);
+        transform-origin: center 0px;
+        -webkit-transform-origin: center 0px;
+        -o-transform-origin: center 0px;
+    }
 
+    #personaje_temblando,
+    #personaje_salvado{
+        transform: scale(0.7);
+        -webkit-transform: scale(0.7);
+        -o-transform: scale(0.7);
+        top: 14%;
+        right: initial;
+    }
+    #personaje_temblando{
+        left: 50%;
+        left: calc(50% - (91px / 2));
+        left: -moz-calc(50% - (91px / 2));
+    }
+    #personaje_salvado{
+        left: 50%;
+        left: calc(50% - (95px / 2));
+        left: -moz-calc(50% - (95px / 2));
+    }
+    .personaje_temblando_animation{
+        animation: none;
+        -webkit-animation: none;
+        animation: unset;
+        -webkit-animation: unset;
+    }
+
+    #cuerda{
+        display: none;
+    }
+    .cuerda-temblando{
+        animation: none;
+        -webkit-animation: none;
+        animation: unset;
+        -webkit-animation: unset;
+    }
+    #grua{
+        top: 50px;
+        left: 50%;
+        left: calc(50% - (350px / 2));
+        left: -moz-calc(50% - (350px / 2));
+        right: initial;
+        width: 350px;
+        height: 50px;
+    }
+    
+    #grua-1{
+        display: none;
+    }
+    #grua-2{
+        display: none;
+    }
+    .grua-2-active,.lingote-active{
+        animation: none;
+        animation: unset;
+        -webkit-animation: none;
+        -webkit-animation: unset;
+    }
+    #grua-3{
+        display: none;
+    }
+    #hilo{
+        left: 50%;
+        left: calc(50% - 3px);
+        left: -moz-calc(50% - 3px);
+        top: -75px; 
+    }
+    #lingote{
+        top: 0px;
+        left: 0px;
+        transform: none;
+        -webkit-transform: none;
+        -o-transform: none;
+    }
+    
+    #letras-content{
+        width: 100%;
+        width: calc(100% - 20px);
+        width: -moz-calc(100% - 20px);
+        
+        bottom: 15px;
+    }
+    .ladrillo{
+        width: 40px;
+        width: calc(100% / 6);
+        width: -moz-calc(100% / 6);
+        margin: 0px;
+    }
+    .ladrillo p{
+        font-size: 15px;
+    }
+
+    #humo1,#humo2,#humo3{
+        display: none;
+    }
+    .humo-on-1,.humo-on-2,.humo-on-3{
+        animation: none;
+        animation: unset;
+        -webkit-animation: none;
+        -webkit-animation: unset;
+    }
     /************MODAL**************/
     #modal-box{
         width: 95%;

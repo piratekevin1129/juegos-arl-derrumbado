@@ -186,7 +186,10 @@ function clickLetra(l,letra_div){
 				temblor_mp3.play()
 				temblando = true
 				getE('estructura').className = 'barras-moving-'+(intentos+1)
-				getE('personaje_temblando').classList.add('personaje_temblando_animation')
+				if(!isresponsive){
+					getE('personaje_temblando').classList.add('personaje_temblando_animation')
+				}
+				
 				getE('humo1').className = 'humo'
 				getE('humo2').className = 'humo'
 				getE('humo3').className = 'humo'
@@ -233,7 +236,10 @@ function clickLetra(l,letra_div){
 			    	clearTimeout(animacion_temblando)
 			    	animacion_temblando = null
 
-			    	getE('personaje_temblando').classList.remove('personaje_temblando_animation')
+			    	if(!isresponsive){
+			    		getE('personaje_temblando').classList.remove('personaje_temblando_animation')
+			    	}
+			    	
 			    	getE('cuerda').classList.remove('cuerda-temblando')
 
 					//quitar animaciopn center-normal
