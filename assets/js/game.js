@@ -29,8 +29,9 @@ function setInstrucciones(start){
 		html+='<div class="modal-instrucciones-gif"><div onclick="setVideoInstrucciones(this)"><video loop><source type="video/mp4" src="assets/images/instrucciones_pc.mp4" /></video><button></button></div></div>'
 	}*/
 	
-	html+='<p>haz clic en las letras para descubrir la palabra oculta.</p>'
-	html+='<p>solo tienes <span>5</span> oportunidades, si pierdes Juan se caerá de la edificación.</p>'
+	html+='<p>En el siguiente juego deberás decifrar el Equipo de protección personal.</p>'
+	html+='<p>Haz clic en las letras para descubrir la palabra oculta.</p>'
+	html+='<p>Solo tienes <span>5</span> oportunidades, si pierdes Juan se caerá de la edificación.</p>'
 	
     if(start){
     	setModal({
@@ -186,9 +187,9 @@ function clickLetra(l,letra_div){
 				temblor_mp3.play()
 				temblando = true
 				getE('estructura').className = 'barras-moving-'+(intentos+1)
-				if(!isresponsive){
-					getE('personaje_temblando').classList.add('personaje_temblando_animation')
-				}
+				
+				getE('personaje_temblando').classList.add('personaje_temblando_animation')
+				
 				
 				getE('humo1').className = 'humo'
 				getE('humo2').className = 'humo'
@@ -236,9 +237,7 @@ function clickLetra(l,letra_div){
 			    	clearTimeout(animacion_temblando)
 			    	animacion_temblando = null
 
-			    	if(!isresponsive){
-			    		getE('personaje_temblando').classList.remove('personaje_temblando_animation')
-			    	}
+		    		getE('personaje_temblando').classList.remove('personaje_temblando_animation')
 			    	
 			    	getE('cuerda').classList.remove('cuerda-temblando')
 
