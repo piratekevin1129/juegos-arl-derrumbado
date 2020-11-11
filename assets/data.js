@@ -1,7 +1,7 @@
 var palabras_disponibles = [
 	{
 		palabra:'Guantes',
-		descripcion:'Sirven para proteger las manos de aceleraciones y otras lesiones, además de dar un mejor agarre.',
+		descripcion:'Sirven para proteger las manos de laceraciones y otras lesiones, además de dar un mejor agarre.',
 		word:'guantes'
 	},
 	{
@@ -21,7 +21,7 @@ var palabras_disponibles = [
 	},
 	{
 		palabra:'Mascarilla',
-		descripcion:'Son mascarillas especiales para trabajos donde influya mucho el polvo, y tierra.',
+		descripcion:'Son mascarillas especiales para trabajos donde influya mucho el polvo y tierra.',
 		word:'mascarilla'
 	},
 	{

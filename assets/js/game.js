@@ -29,7 +29,7 @@ function setInstrucciones(start){
 		html+='<div class="modal-instrucciones-gif"><div onclick="setVideoInstrucciones(this)"><video loop><source type="video/mp4" src="assets/images/instrucciones_pc.mp4" /></video><button></button></div></div>'
 	}*/
 	
-	html+='<p>En el siguiente juego deberás decifrar el Equipo de protección personal.</p>'
+	html+='<p>En el siguiente juego deberás decifrar el Equipo de Protección Personal.</p>'
 	html+='<p>Haz clic en las letras para descubrir la palabra oculta.</p>'
 	html+='<p>Solo tienes <span>5</span> oportunidades, si pierdes Juan se caerá de la edificación.</p>'
 	
