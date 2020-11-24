@@ -29,9 +29,9 @@ function setInstrucciones(start){
 		html+='<div class="modal-instrucciones-gif"><div onclick="setVideoInstrucciones(this)"><video loop><source type="video/mp4" src="assets/images/instrucciones_pc.mp4" /></video><button></button></div></div>'
 	}*/
 	
-	html+='<p>En el siguiente juego deberás decifrar el Equipo de Protección Personal.</p>'
+	html+='<p>En el siguiente juego deberás descifrar el Equipo de Protección Personal.</p>'
 	html+='<p>Haz clic en las letras para descubrir la palabra oculta.</p>'
-	html+='<p>Solo tienes <span>5</span> oportunidades, si pierdes Juan se caerá de la edificación.</p>'
+	html+='<p>Solo tienes <span>5</span> oportunidades, si pierdes, Juan se caerá de la edificación.</p>'
 	
     if(start){
     	setModal({
@@ -144,6 +144,7 @@ function startGame(){
 	setPalabra()
 }
 function setPalabra(){
+	getE('oficio-title-txt').innerHTML = String((p_actual+1)+'/'+palabras_disponibles.length)
 	for(i = 0;i<palabra_actual_array.length;i++){
 		var div = document.createElement('div')
 		div.className = 'letter'
@@ -283,7 +284,7 @@ function clickLetra(l,letra_div){
 					if(p_actual==(palabras_disponibles.length-1)){
 						setModal({
 							close:false,
-							title:"¡Muy Bien!",
+							title:"¡Muy bien!",
 							content:'<p><span>'+palabra_actual.palabra+'</span></p><p>'+palabra_actual.descripcion+'</p><br /><p>Has decifrado todas las palabras</p>',
 							button:true,
 							value:'Jugar de nuevo',
@@ -293,7 +294,7 @@ function clickLetra(l,letra_div){
 					}else{
 						setModal({
 							close:false,
-							title:"¡Muy Bien!",
+							title:"¡Muy bien!",
 							content:'<p><span>'+palabra_actual.palabra+'</span></p><p>'+palabra_actual.descripcion+'</p>',
 							button:true,
 							value:'Continuar',
